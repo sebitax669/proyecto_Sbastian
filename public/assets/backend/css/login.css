@@ -1,0 +1,80 @@
+/* public/assets/backend/css/login.css */
+body {
+    font-family: 'Tahoma', 'Geneva', sans-serif;
+    background-color: #008080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#sectionlogin {
+    background-color: #c0c0c0;
+    padding: 20px;
+    border: 2px solid #000000;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 100%;
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: #000080;
+    text-shadow: 1px 1px 0 #ffffff;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #000000;
+    text-shadow: 1px 1px 0 #ffffff;
+}
+
+.contenedor {
+    margin-bottom: 15px;
+}
+
+.contenedor label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+    text-shadow: 1px 1px 0 #ffffff;
+}
+
+.contenedor input {
+    width: 100%;
+    padding: 5px;
+    border: 2px solid #7f7f7f;
+    border-radius: 0;
+    box-shadow: inset 1px 1px 0 #ffffff, inset -1px -1px 0 #7f7f7f;
+    background-color: #e0e0e0;
+    color: #000000;
+}
+
+.contenedor input:focus {
+    border-color: #000080;
+    outline: none;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 5px;
+    background-color: #c0c0c0;
+    border: 2px solid #7f7f7f;
+    border-radius: 0;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #7f7f7f;
+}
+
+input[type="submit"]:hover {
+    background-color: #a0a0a0;
+}
+
+#error {
+    margin-top: 15px;
+    color: #ff0000;
+    font-size: 14px;
+    text-shadow: 1px 1px 0 #ffffff;
+}

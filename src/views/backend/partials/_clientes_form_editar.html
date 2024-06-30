@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Cliente</title>
+    <link rel="stylesheet" href="/public/assets/backend/css/clientes_listar.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Registro de Cliente</h1>
+            <button class="back-button">Volver</button>
+        </div>
+        <div class="tabs">
+            <button class="tab-button active" data-tab="basics">Datos Básicos</button>
+            <button class="tab-button" data-tab="points">Puntos</button>
+            <button class="tab-button" data-tab="extras">Extras Cliente</button>
+            <button class="tab-button" data-tab="operations">Operaciones</button>
+        </div>
+        <div class="form-container">
+            <form id="formUpdate">
+                <input type="hidden" id="id" name="id" value="{{ id }}">
+                <div class="form-group">
+                    <label for="nombres">Nombres</label>
+                    <input type="text" id="nombres" name="nombres" value="{{ nombres }}">
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion" name="direccion" value="{{ direccion }}">
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" name="correo" value="{{ correo }}">
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" id="telefono" name="telefono" value="{{ telefono }}">
+                </div>
+                <div class="form-group">
+                    <label for="estado">Estado</label>
+                    <select name="estado" id="estado">
+                        {{ options }}
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="submit" id="guardar" name="guardar" value="Guardar">
+                </div>
+            </form>
+        </div>
+        <div id="mensajeError"></div>
+    </div>
+</body>
+</html>

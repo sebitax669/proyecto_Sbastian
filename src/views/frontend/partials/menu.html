@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Videojuegos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Catálogo de Videojuegos</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li><button type="button" class="btn btn-link"><a href="/">Home</a></button></li>
+                            <li><button type="button" class="btn btn-link"><a href="/nosotros">Nosotros</a></button></li>
+                            <li><button type="button" class="btn btn-link"><a href="/servicios">Servicios</a></button></li>
+                            <li><button type="button" class="btn btn-link"><a href="/contacto">Contáctanos</a></button></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            
+
+    <main class="container">
+        <h1 class="mt-4">Juego</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.instant-gaming.com/images/products/5830/616x353/game-steam-halo-4-cover.jpg?v=1657004400" class="card-img-top" alt="Nombre del Juego 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Nombre del Juego 1</h5>
+                        <p class="card-text">Descripción corta del juego 1.</p>
+                        <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi8Q9C9-OiFAIHqUuYUXCdtPNdIvTY96sIKorSson5Lg&s" class="card-img-top" alt="Nombre del Juego 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Nombre del Juego 2</h5>
+                        <p class="card-text">Descripción corta del juego 2.</p>
+                        <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://logowik.com/content/uploads/images/super-smash-bros-ultimate4015.logowik.com.webp" class="card-img-top" alt="Nombre del Juego 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Nombre del Juego 3</h5>
+                        <p class="card-text">Descripción corta del juego 3.</p>
+                        <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+            </div>
+  
+  
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function aplicarFiltros() {
+            var plataforma = document.getElementById('plataforma').value;
+            var genero = document.getElementById('genero').value;
+            var letra = document.getElementById('letra').value;
+
+            // Aquí puedes implementar la lógica para filtrar los juegos según los valores seleccionados
+            // Por ahora, simplemente muestra una alerta con los valores seleccionados
+            alert('Plataforma: ' + plataforma + ', Género: ' + genero + ', Letra: ' + letra);
+        }
+    </script>
+</body>
+</html>

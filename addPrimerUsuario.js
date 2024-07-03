@@ -10,7 +10,7 @@ const db = DataBase.getInstance();
 
 // Datos del primer usuario
 const username = 'seba@123.cl'; // El correo electronico es el Nombre de usuario, modificalo por el tuyo.
-const password = '12'; // Cambia la Contraseña por una segura.
+const password = '123456'; // Cambia la Contraseña por una segura.
 
 // Hash de la contraseña antes de almacenarla en la base de datos
 bcrypt.hash(password, 10, async (err, hashedPassword) => {
